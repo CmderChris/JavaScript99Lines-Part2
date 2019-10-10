@@ -1,19 +1,36 @@
-let friends = ['Emily', 'Luke', 'Audrey', 'Julian', 'Oliver'];
+document.addEventListener("DOMContentLoaded", function () {
+    let button = document.getElementById("button");
 
-for (let i = 0; i < friends.length; i++) {
-   
-    //display each friends name
-    console.log(friends[i] + ':')
+    button.addEventListener("click", function () {
 
-    for (let j = 99; j > 0; j--) {
-        if (j === 1) { 
-            //custom lyrics for the last line
-            console.log(j + ' line of code in the file, ' + j + ' line of code; ' + friends[i] + ' strikes it out, clears it all out, no more lines of code in the file!'); 
-        } else {
-            //default lyrics for values of j 99 to 2
-            console.log(j + ' lines of code in the file, ' + j + ' lines of code; ' + friends[i] + ' strikes one out, clears it all out, ' + (j - 1) + ' lines of code in the file.'); 
-        }
-    }
 
-    console.log('------------------------------------');
-}
+        let friends = ['Emily', 'Luke', 'Audrey', 'Julian', 'Oliver'];
+
+        for (let i = 0; i < friends.length; i++) {
+            
+            let div = document.createElement("div");
+            div.className = "friend";
+            document.body.appendChild(div);
+
+            let h3 = document.createElement("h3");
+            let h3Text = document.createTextNode(friends[i]);
+            div.appendChild(h3);
+            h3.appendChild(h3Text);
+
+            for (let j = 99; j > 0; j--) {
+                let p = document.createElement("p");
+    
+                if (j === 1) {
+                    pText = document.createTextNode(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file!");
+                } else {
+                    pText = document.createTextNode(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + (j - 1) + " lines of code in the file!");
+                }
+                div.appendChild(p);
+                p.appendChild(pText);
+            }
+        };
+
+
+
+    });
+});

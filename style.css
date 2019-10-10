@@ -1,22 +1,29 @@
 body {
-    background-color: rgb(85, 218, 167);
+    background-color: rgb(226, 128, 218);
     font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
 }
 
 h1 {
-    color: rgb(179, 59, 143);
-    font-family: sans-serif;
-}
-
-p {
-    color: rgb(121, 115, 207);
-}
-
-.friend {
-    color: rgb(252, 89, 61);
+    color: rgb(21, 253, 253);
+    font-family: permanent marker, cursive;
+    font-size: 5em;
+    margin-bottom: 30px;
 }
 
 h3 {
-    text-transform: uppercase;
+    color: rgb(9, 240, 59);
+    font-size: 3em;
+    font-family: permanent marker, cursive;
+}
+
+p {
+    color: rgb(21, 253, 253);
+    font-weight: bold;
+}
+
+.btn {
+    margin-bottom: 30px;
 }
 
