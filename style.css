@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(85, 218, 167);
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(179, 59, 143);
+    font-family: sans-serif;
+}
+
+p {
+    color: rgb(121, 115, 207);
+}
+
+.friend {
+    color: rgb(252, 89, 61);
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
